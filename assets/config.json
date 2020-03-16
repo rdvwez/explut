@@ -1,0 +1,26 @@
+{
+    "rootAPI": "/api/v1/",
+    "port": 8888,
+    "db": {
+        "host": "localhost",
+        "user"    : "root",
+        "password" : "josue8@desir",
+        "database" :"base_candidatures"
+
+    },
+
+    "errors":{
+        "wrongID": "wrong id",
+        "wrongMaxValue": "wrong max value",
+        "thisApplicationAlreadyExists": "this application already exists",
+        "someInformationsAreMissingFromTheForm": "some informations are missing from the form",
+        "WrongData": "wrong data",
+        "cryptageFailure": "cryptage failure",
+        "notihngFound": "notihng found",
+        "EmailDontExist": "Email dont exist",
+        "MailAlreadyTaken": "Mail already taken"
+       
+
+    }
+}
+

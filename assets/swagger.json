@@ -1,0 +1,132 @@
+{
+    "info": {
+      "title": "API REST documentation by Reddy Desir VWEZ",
+      
+      "version": "1.0.0",
+      "license": {
+        "name": "ISC"
+      },
+      "description": "API REST de gestion de candidature"
+    },
+
+    "basePath": "/api/v1",
+    "host": "localhost:8888",
+    "tags":[
+        {
+            "name": "candidatures",
+            "description": "Méthode permetant de gérer les candidatures"
+        }
+    ],
+
+    "paths": {
+      "candidatures/{id}": {
+        "put": {
+            "tags": ["candidatures"],
+          "summary": "candidatures/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ],
+          "responses": {}
+        },
+        "delete": {
+            "tags": ["candidatures"],
+          "summary": "candidatures/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "id",
+              "in": "path",
+              "required": true
+            }
+          ],
+          "responses": {}
+        },
+        "get": {
+            "tags": ["candidatures"],
+          "summary": "candidatures/{id}",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "max",
+              "in": "query",
+              "required": false
+            }
+          ],
+          "responses": {}
+        }
+      },
+      "candidatures": {
+        "get": {
+            "tags": ["candidatures"],
+          "summary": "candidatures",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {}
+        },
+        "post": {
+            "tags": ["candidatures"],
+          "summary": "candidatures",
+          "consumes": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+                "name": "entrprise",
+                "in": "body",
+                "required": true
+            },
+            {
+                "name": "adresse",
+                "in": "body",
+                "required": true
+            },
+            {
+                "name": "siteweb",
+                "in": "body",
+                "required": true
+            },
+            {
+                "name": "datesoumission",
+                "in": "body",
+                "required": true
+            },
+            {
+                "name": "dureetraitement",
+                "in": "body",
+                "required": true
+            },
+            {
+                "name": "description",
+                "in": "body",
+                "required": false
+            },
+            {
+                "name": "commentaire",
+                "in": "body",
+                "required": false
+            },
+            {
+                "name": "iduser",
+                "in": "body",
+                "required": true
+            }
+          ],
+          "responses": {}
+        }
+      }
+    },
+    "swagger": "2.0"
+  }
